@@ -45,10 +45,10 @@ print("Type \"exit\" to quit the program.")
 while True:
     search = input("Please enter a search term: ")
 
-    if search == "exit". lower():
+    if search == "exit". lower().strip():
         print("Exiting the program.")
         break
-    elif search == "emails".lower():
+    elif search == "emails".lower().strip():
         print(f"Emails: {emails}")
     elif search == "phone numbers".lower().strip():
         print(f"Urls: {phone_numbers}")
@@ -56,7 +56,7 @@ while True:
         print(f"Credit Card Numbers: {credit_nums}")
     elif search == "currency amounts".lower().strip():
         print(f"Currency Amounts: {currency_amounts}")
-    elif search == "time".lower():
+    elif search == "time".lower().strip():
         print(f"Time: {time}")
     elif search == "urls".lower().strip():
         print(f"URLs: {urls}")
