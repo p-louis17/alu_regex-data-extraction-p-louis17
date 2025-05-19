@@ -34,7 +34,7 @@ phone_numbers = re.findall(r"\d{3}[-.]\d{3}[-.]\d{4}|[(]\d{3}[)]\s\d{3}[-]\d{4}"
 credit_nums = re.findall(r"\d{4}-\d{4}-\d{4}-\d{4}|\d{4}\s\d{4}\s\d{4}\s\d{4}", data)
 currency_amounts = re.findall(r"(\$\S+)", data)
 time = re.findall(r"(\d+:\S+)", data)
-urls = re.findall(r"\b(https:\/\/\S+)", data)
+urls = re.findall(r"\b(https?:\/\/[^\s)]+)", data)
 html_tags = re.findall(r"(<.+>)", data)
 hashtags = re.findall(r"(#\S+)", data)
 
